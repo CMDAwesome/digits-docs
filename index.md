@@ -7,7 +7,7 @@ Digits is a personal contact manager built with Next.js, React Bootstrap, NextAu
 ## Installation
 
 1. Install Node.js 20.19 or later (Node.js 22 LTS recommended) and PostgreSQL.
-2. Obtain a local copy of this repository and run `npm install` in its root.
+2. Obtain access to the private [application source repository](https://github.com/CMDAwesome/digits), clone it, and run `npm install` in the `digits` directory. This public `digits-docs` repository contains only documentation and cannot run the application.
 3. Create a PostgreSQL development database named `digits` (for example, `createdb digits`).
 4. Copy `sample.env` to `.env`. Set `DATABASE_URL` to your own PostgreSQL connection string, such as `postgresql://USER:PASSWORD@localhost:5432/digits?schema=public`. URL-encode special characters in the password. Set `AUTH_SECRET` to a randomly generated secret and `AUTH_URL` to `http://localhost:3000`. Never commit `.env`.
 5. Run `npx prisma generate`, then `npx prisma migrate deploy` to create the tables.
